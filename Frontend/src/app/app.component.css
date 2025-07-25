@@ -1,0 +1,145 @@
+﻿/* Estilos gerais do componente raiz */
+:host {
+    display: block;
+    min-height: 100vh;
+    font-family: 'Roboto', 'Helvetica Neue', sans-serif;
+}
+
+/* Container principal da aplicação */
+.app-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #f5f5f5;
+}
+
+/* Cabeçalho da aplicação */
+.app-header {
+    background: linear-gradient(135deg, #3f51b5 0%, #303f9f 100%);
+    color: white;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+    .app-header h1 {
+        margin: 0;
+        font-size: 24px;
+        font-weight: 300;
+        letter-spacing: 0.5px;
+    }
+
+/* Conteúdo principal */
+.app-main {
+    flex: 1;
+    padding: 20px;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+/* Rodapé (se houver) */
+.app-footer {
+    background-color: #eeeeee;
+    padding: 15px;
+    text-align: center;
+    color: #666;
+    font-size: 12px;
+    border-top: 1px solid #e0e0e0;
+}
+
+/* Estilos para o router-outlet */
+.router-container {
+    animation: fadeIn 0.3s ease-in;
+}
+
+/* Animações */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 768px) {
+    .app-header {
+        padding: 15px;
+    }
+
+        .app-header h1 {
+            font-size: 20px;
+        }
+
+    .app-main {
+        padding: 10px;
+    }
+
+    .app-footer {
+        padding: 10px;
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .app-header {
+        padding: 12px;
+    }
+
+        .app-header h1 {
+            font-size: 18px;
+        }
+
+    .app-main {
+        padding: 8px;
+    }
+}
+
+/* Estilos para mensagens de loading global */
+.global-loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+
+/* Estilos para erros globais */
+.global-error {
+    background-color: #ffebee;
+    color: #c62828;
+    padding: 15px;
+    border-radius: 4px;
+    margin: 10px 0;
+    border-left: 4px solid #c62828;
+}
+
+/* Transições suaves */
+* {
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+/* Scrollbar personalizada (opcional) */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #bdbdbd;
+    border-radius: 4px;
+}
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: #9e9e9e;
+    }

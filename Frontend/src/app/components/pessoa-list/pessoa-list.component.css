@@ -1,0 +1,159 @@
+﻿/* Estilos gerais do componente */
+.container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Estilos do campo de filtro */
+mat-form-field {
+    width: 300px;
+    margin-right: 20px;
+}
+
+/* Estilos do botão de carregar */
+button[mat-raised-button] {
+    height: 56px;
+    margin-bottom: 20px;
+}
+
+/* Estilos da tabela */
+.mat-mdc-table {
+    width: 100%;
+    background-color: white;
+}
+
+/* Estilos dos cabeçalhos da tabela */
+.mat-mdc-header-cell {
+    font-weight: bold;
+    color: #333;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+/* Estilos das células da tabela */
+.mat-mdc-cell {
+    font-size: 14px;
+    color: #666;
+    padding: 8px 0;
+}
+
+/* Estilos das linhas da tabela */
+.mat-mdc-row:hover {
+    background-color: #f5f5f5;
+}
+
+/* Estilos do paginador */
+.mat-mdc-paginator {
+    background-color: white;
+    border-top: 1px solid #e0e0e0;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    mat-form-field {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+
+    button[mat-raised-button] {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    /* Para telas menores, esconder algumas colunas */
+    .mat-column-cpf,
+    .mat-column-endereco,
+    .mat-column-municipio {
+        display: none;
+    }
+
+    .mat-column-nome,
+    .mat-column-genero,
+    .mat-column-idade,
+    .mat-column-estado {
+        flex: 1;
+    }
+}
+
+/* Animações */
+.mat-mdc-row {
+    transition: background-color 0.2s ease;
+}
+
+/* Estilo para quando não há dados */
+.no-data {
+    text-align: center;
+    padding: 40px;
+    color: #999;
+    font-style: italic;
+}
+
+/* Loading spinner */
+.loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Estilos para o filtro */
+.mat-form-field-outline {
+    background-color: white;
+}
+
+.mat-form-field-appearance-outline .mat-form-field-outline {
+    color: #ccc;
+}
+
+/* Estilos para o container da tabela */
+.table-container {
+    overflow-x: auto;
+    box-shadow: 0 2px 1px -1px rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 1px 3px 0 rgba(0,0,0,.12);
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+/* Estilos para o título (se necessário) */
+.title {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 300;
+}
+
+/* Estilos para mensagens de erro */
+.error-message {
+    color: #f44336;
+    padding: 10px;
+    background-color: #ffebee;
+    border-radius: 4px;
+    margin: 10px 0;
+}
+
+/* Estilos para o container de filtros */
+.filters-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #fafafa;
+    border-radius: 4px;
+}
+
+/* Estilos para o input de filtro */
+.mat-input-element {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Estilos para o botão de refresh */
+.refresh-button {
+    min-width: 120px;
+}
