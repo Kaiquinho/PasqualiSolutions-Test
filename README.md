@@ -19,3 +19,11 @@ Este projeto consiste em uma aplicação simples com Angular 17 no front-end e A
 2. Execute o projeto: dotnet run 
    ```bash 
    dotnetrun
+O servidor estará disponível em http://localhost:5000.
+
+3. Front-end (Angular 17)
+Pré-requisitos:
+- Node.js
+- Angular CLI
+Passos:
+Navegue até o diretório frontend
