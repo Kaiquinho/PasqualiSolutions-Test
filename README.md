@@ -17,5 +17,5 @@ Este projeto consiste em uma aplicação simples com Angular 17 no front-end e A
    cd backend
 
 2. Execute o projeto: dotnet run 
-```bash 
-dotnetrun
+   ```bash 
+   dotnetrun
